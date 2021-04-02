@@ -9,9 +9,17 @@ import React from 'react';
 // };
 // Desctructing example
 export default function Pet ({ id, name, animal, breed }) {
-    return React.createElement("div", {}, [
-        React.createElement("h1", { id: id }, name),
-        React.createElement("h2", { id: id }, animal),
-        React.createElement("h2", { id: id }, breed),
-    ]);
+    // return React.createElement("div", {}, [
+    //     React.createElement("h1", { id: id }, name),
+    //     React.createElement("h2", { id: id }, animal),
+    //     React.createElement("h2", { id: id }, breed),
+    // ]);
+
+    return (
+        <div>
+            <h1>{ name }</h1>
+            <h2>{ animal }</h2>
+            <h2>{ breed }</h2>
+        </div>
+    )
 };
